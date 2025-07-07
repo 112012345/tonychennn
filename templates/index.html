@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SSR文件「差異及決議」Word to Excel自動化小工具</title>
+    <style>
+        body { font-family: 'Noto Sans TC', Arial, sans-serif; background: #f7f7f7; }
+        .container { max-width: 500px; margin: 40px auto; background: #fff; padding: 32px; border-radius: 12px; box-shadow: 0 2px 8px #0001; }
+        h1 { font-size: 1.5em; margin-bottom: 1em; }
+        label { font-weight: bold; }
+        input[type=file], button { margin: 12px 0; }
+        button { padding: 8px 24px; font-size: 1.1em; border-radius: 6px; border: none; background: #2b7cff; color: #fff; cursor: pointer; }
+        button:hover { background: #1a5dcc; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>SSR文件「差異及決議」Word to Excel自動化小工具</h1>
+        <form action="/process" method="post" enctype="multipart/form-data">
+            <label>上傳 Word 檔案（可多選）</label><br>
+            <input type="file" name="word_files" multiple required><br>
+            <label>上傳 Excel 樣板</label><br>
+            <input type="file" name="excel_file" required><br>
+            <button type="submit">匯出</button>
+        </form>
+    </div>
+</body>
+</html>
