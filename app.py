@@ -1,3 +1,4 @@
+os.makedirs('output', exist_ok=True)
 from flask import Flask, request, send_file, render_template
 import os
 from 自動化小工具 import run_batch_process

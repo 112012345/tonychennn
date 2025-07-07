@@ -265,7 +265,7 @@ def write_to_excel(excel_path, data, start_row=2, start_col=1, lon_value=None, c
         cell.comment = Comment(x_comment_text, "說明")
     # === 新增結束 ===
 
-    wb.save('/Users/chenfutung/Desktop/03_SSR差異分析方案評分工作表_授信.xlsx')
+    wb.save('output/03_SSR差異分析方案評分工作表_授信.xlsx')
 
 
 
